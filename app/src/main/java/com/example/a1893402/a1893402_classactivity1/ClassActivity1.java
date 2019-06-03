@@ -1,5 +1,6 @@
 package com.example.a1893402.a1893402_classactivity1;
 
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.SmsMessage;
@@ -38,11 +39,11 @@ ImageView image;
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("First name ",fname.getText().toString());
-                Log.d("Last name ",lname.getText().toString());
-                Log.d("Email ",email.getText().toString());
-                Log.d("Password ",password.getText().toString());
-                toast.setText("Hello! "+fname.getText().toString());
+                Log.d("First name ", fname.getText().toString());
+                Log.d("Last name ", lname.getText().toString());
+                Log.d("Email ", email.getText().toString());
+                Log.d("Password ", password.getText().toString());
+                toast.setText("Hello! " + fname.getText().toString());
                 toast.show();
                 Snackbar.make(v, "Submitted Successfully", Snackbar.LENGTH_LONG).show();
 
@@ -55,9 +56,10 @@ ImageView image;
                                 lname.setText(null);
                                 email.setText(null);
                                 password.setText(null);
-            }
-        });
-    }
-};
+                            }
+                        });
 
+            };
+        });
+    }}
 
